@@ -1,0 +1,66 @@
+﻿@model ContratoDatos.Models.datos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>datos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ParadaNombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ParadaNombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descrip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descrip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Parada_Lon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Parada_Lon)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Parada_Lat)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Parada_Lat)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Parada_Cod)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Parada_Cod)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Boarding)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Boarding)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ParadaId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
